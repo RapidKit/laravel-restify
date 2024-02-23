@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace RamaID\LaravelRestify\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelRestifyCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-restify';
 
     public $description = 'My command';
 

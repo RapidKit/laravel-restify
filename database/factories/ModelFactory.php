@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Database\Factories;
+namespace RamaID\LaravelRestify\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
