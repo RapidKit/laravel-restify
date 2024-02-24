@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Data;
+
+#[\Spatie\TypeScriptTransformer\Attributes\TypeScript]
+final class {{ name }} extends \Spatie\LaravelData\Data
+{
+    public function __construct(
+        // TODO: sesuaikan dengan migration
+    ) {
+    }
+}

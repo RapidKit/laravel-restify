@@ -1,10 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace RamaID\LaravelRestify;
 
+use RamaID\LaravelRestify\Commands\GenerateCommand;
+use RamaID\LaravelRestify\Commands\GenerateControllerCommand;
+use RamaID\LaravelRestify\Commands\GenerateDataCommand;
+use RamaID\LaravelRestify\Commands\SetupCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RamaID\LaravelRestify\Commands\LaravelRestifyCommand;
 
 class LaravelRestifyServiceProvider extends PackageServiceProvider
 {
@@ -17,9 +22,10 @@ class LaravelRestifyServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-restify')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-restify_table')
-            ->hasCommand(LaravelRestifyCommand::class);
+            ->hasCommand(SetupCommand::class)
+            ->hasCommand(GenerateDataCommand::class)
+            ->hasCommand(GenerateControllerCommand::class)
+            ->hasCommand(GenerateCommand::class)
+        ;
     }
 }
