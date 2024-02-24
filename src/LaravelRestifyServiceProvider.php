@@ -25,7 +25,6 @@ class LaravelRestifyServiceProvider extends PackageServiceProvider
             ->hasCommand(SetupCommand::class)
             ->hasCommand(GenerateDataCommand::class)
             ->hasCommand(GenerateControllerCommand::class)
-            ->hasCommand(GenerateCommand::class)
-        ;
+            ->hasCommand(GenerateCommand::class);
     }
 }

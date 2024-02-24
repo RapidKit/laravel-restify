@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace RamaID\LaravelRestify\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Artisan;
 
 class GenerateCommand extends Command
