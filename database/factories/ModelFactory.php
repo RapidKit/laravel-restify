@@ -1,6 +1,6 @@
 <?php
 
-namespace RamaID\LaravelRestify\Database\Factories;
+namespace RapidKit\LaravelRestify\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace RamaID\LaravelRestify;
+namespace RapidKit\LaravelRestify;
 
-use RamaID\LaravelRestify\Commands\GenerateCommand;
-use RamaID\LaravelRestify\Commands\GenerateControllerCommand;
-use RamaID\LaravelRestify\Commands\GenerateDataCommand;
-use RamaID\LaravelRestify\Commands\SetupCommand;
+use RapidKit\LaravelRestify\Commands\GenerateCommand;
+use RapidKit\LaravelRestify\Commands\GenerateControllerCommand;
+use RapidKit\LaravelRestify\Commands\GenerateDataCommand;
+use RapidKit\LaravelRestify\Commands\SetupCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

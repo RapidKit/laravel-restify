@@ -1,9 +1,9 @@
 # Laravel Restify
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ramaid/laravel-restify.svg?style=flat-square)](https://packagist.org/packages/ramaid/laravel-restify)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/rapidkit/laravel-restify.svg?style=flat-square)](https://packagist.org/packages/rapidkit/laravel-restify)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ramaID/laravel-restify/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ramaID/laravel-restify/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ramaID/laravel-restify/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ramaID/laravel-restify/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/ramaid/laravel-restify.svg?style=flat-square)](https://packagist.org/packages/ramaid/laravel-restify)
+[![Total Downloads](https://img.shields.io/packagist/dt/rapidkit/laravel-restify.svg?style=flat-square)](https://packagist.org/packages/rapidkit/laravel-restify)
 
 Is a powerful and intuitive package designed to accelerate REST API development within the Laravel ecosystem. With efficient and flexible capabilities, Restify presents an integrated and customizable solution for modern API development. Its seamless integration with Laravel ensures a streamlined experience, making it effortlessly scalable for projects of any size. Gain a development advantage with Laravel Restify — an elegant and feature-rich solution to meet your API needs.
 
@@ -12,7 +12,7 @@ Is a powerful and intuitive package designed to accelerate REST API development 
 You can install the package via composer:
 
 ```bash
-composer require ramaid/laravel-restify --dev
+composer require rapidkit/laravel-restify --dev
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 <?php
 
-namespace RamaID\LaravelRestify;
+namespace RapidKit\LaravelRestify;
 
 class LaravelRestify
 {
