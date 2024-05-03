@@ -1,16 +1,16 @@
 <?php
 
-namespace RamaID\LaravelRestify\Facades;
+namespace RapidKit\LaravelRestify\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \RamaID\LaravelRestify\LaravelRestify
+ * @see \RapidKit\LaravelRestify\LaravelRestify
  */
 class LaravelRestify extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \RamaID\LaravelRestify\LaravelRestify::class;
+        return \RapidKit\LaravelRestify\LaravelRestify::class;
     }
 }

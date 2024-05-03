@@ -1,12 +1,12 @@
 {
-    "name": "ramaid/laravel-restify",
+    "name": "rapidkit/laravel-restify",
     "description": "Powerful and intuitive package designed to accelerate REST API development within the Laravel ecosystem",
     "keywords": [
         "ramaID",
         "laravel",
         "laravel-restify"
     ],
-    "homepage": "https://github.com/ramaid/laravel-restify",
+    "homepage": "https://github.com/rapidkit/laravel-restify",
     "license": "MIT",
     "authors": [
         {
@@ -38,13 +38,13 @@
     },
     "autoload": {
         "psr-4": {
-            "RamaID\\LaravelRestify\\": "src/",
-            "RamaID\\LaravelRestify\\Database\\Factories\\": "database/factories/"
+            "RapidKit\\LaravelRestify\\": "src/",
+            "RapidKit\\LaravelRestify\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RamaID\\LaravelRestify\\Tests\\": "tests/",
+            "RapidKit\\LaravelRestify\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -76,10 +76,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RamaID\\LaravelRestify\\LaravelRestifyServiceProvider"
+                "RapidKit\\LaravelRestify\\LaravelRestifyServiceProvider"
             ],
             "aliases": {
-                "LaravelRestify": "RamaID\\LaravelRestify\\Facades\\LaravelRestify"
+                "LaravelRestify": "RapidKit\\LaravelRestify\\Facades\\LaravelRestify"
             }
         }
     },
