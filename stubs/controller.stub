@@ -22,7 +22,7 @@ class {{ name }} extends Controller
      */
     public function index()
     {
-        return DataObject::collection(
+        return DataObject::collect(
             $this->model->query()->paginate()
         );
     }
