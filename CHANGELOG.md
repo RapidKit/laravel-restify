@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-restify` will be documented in this file.
 
+## v1.0.2 - 2024-05-04
+
+### What's Changed
+
+* bump: laravel 11 by @ramaID in https://github.com/RapidKit/laravel-restify/pull/7
+
+**Full Changelog**: https://github.com/RapidKit/laravel-restify/compare/v1.0.1...v1.0.2
+
 ## v1.0.1 - 2024-05-03
 
 ### What's Changed
