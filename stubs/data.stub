@@ -3,7 +3,7 @@
 namespace App\Data;
 
 #[\Spatie\TypeScriptTransformer\Attributes\TypeScript]
-final class {{ name }} extends \Spatie\LaravelData\Data
+final class {{ name }} extends \RapidKit\LaravelRestify\Bases\BaseData
 {
     public function __construct(
         // TODO: sesuaikan dengan migration

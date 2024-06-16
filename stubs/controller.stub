@@ -2,71 +2,30 @@
 
 namespace App\Http\Controllers\Api;
 
-// use App\Data\UserData as DataObject; // TODO: sesuaikan class data
-use App\Http\Controllers\Controller;
-// use App\Models\User as Model; // TODO: sesuaikan class model
-use Illuminate\Http\Response;
-use Spatie\LaravelData\PaginatedDataCollection;
+use App\Models\User as Model; // TODO: sesuaikan class model
+use App\Http\Requests\AuthorStoreRequest as StoreRequest;
+use App\Http\Requests\AuthorUpdateRequest as UpdateRequest;
+use RapidKit\LaravelRestify\Bases\BaseRequest;
 
-class {{ name }} extends Controller
+class {{ name }} extends \RapidKit\LaravelRestify\Bases\BaseController
 {
-    public function __construct(public Model $model)
+    public function __construct(
+        protected Model $model,
+    ) {
+    }
+
+    public function model(): Model
     {
-        $this->middleware('auth:sanctum')->only(['store', 'update', 'destroy']);
+        return $this->model;
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return PaginatedDataCollection<array-key, DataObject>
-     */
-    public function index()
-    {
-        return DataObject::collect(
-            $this->model->query()->paginate()
-        );
-    }
+    // public function store(BaseRequest $base): Author
+    // {
+    //     return parent::store(AuthorStoreRequest::createFrom($base));
+    // }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(DataObject $data): DataObject
-    {
-        $attributes = $data->toArray();
-        $model = $this->model->query()->create($attributes);
-
-        return DataObject::from($model);
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(
-        Model $model // TODO: adjust route param
-    ): DataObject {
-        return DataObject::from($model);
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(
-        DataObject $data,
-        Model $model, // TODO: adjust route param
-    ): Response {
-        $model->update($data->toArray());
-
-        return response()->noContent();
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(
-        Model $model // TODO: adjust route param
-    ): Response {
-        $model->delete();
-
-        return response()->noContent();
-    }
+    // public function update(BaseRequest $base, string|int $id): \Illuminate\Http\Response
+    // {
+    //     return parent::update(AuthorUpdateRequest::createFrom($base), $id);
+    // }
 }
