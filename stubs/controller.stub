@@ -19,13 +19,13 @@ class {{ name }} extends \RapidKit\LaravelRestify\Bases\BaseController
         return $this->model;
     }
 
-    // public function store(BaseRequest $base): Author
+    // public function store(BaseRequest $base): Model
     // {
-    //     return parent::store(AuthorStoreRequest::createFrom($base));
+    //     return parent::store(StoreRequest::createFrom($base));
     // }
 
     // public function update(BaseRequest $base, string|int $id): \Illuminate\Http\Response
     // {
-    //     return parent::update(AuthorUpdateRequest::createFrom($base), $id);
+    //     return parent::update(UpdateRequest::createFrom($base), $id);
     // }
 }
