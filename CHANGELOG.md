@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-restify` will be documented in this file.
 
+## v1.1.0 - 2024-06-16
+
+### What's Changed
+
+* feature: Base class for reusable flow by @ramaID in https://github.com/RapidKit/laravel-restify/pull/8
+
+**Full Changelog**: https://github.com/RapidKit/laravel-restify/compare/v1.0.2...v1.1.0
+
 ## v1.0.2 - 2024-05-04
 
 ### What's Changed
