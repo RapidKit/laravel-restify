@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-restify` will be documented in this file.
 
+## v1.2.0 - 2024-06-16
+
+### What's Changed
+
+* feature: generate request class based on base by @ramaID in https://github.com/RapidKit/laravel-restify/pull/10
+
+**Full Changelog**: https://github.com/RapidKit/laravel-restify/compare/v1.1.1...v1.2.0
+
 ## v1.1.1 - 2024-06-16
 
 ### What's Changed
