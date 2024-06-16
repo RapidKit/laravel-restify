@@ -7,6 +7,7 @@ namespace RapidKit\LaravelRestify;
 use RapidKit\LaravelRestify\Commands\GenerateCommand;
 use RapidKit\LaravelRestify\Commands\GenerateControllerCommand;
 use RapidKit\LaravelRestify\Commands\GenerateDataCommand;
+use RapidKit\LaravelRestify\Commands\GenerateRequestCommand;
 use RapidKit\LaravelRestify\Commands\SetupCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -25,6 +26,7 @@ class LaravelRestifyServiceProvider extends PackageServiceProvider
             ->hasCommand(SetupCommand::class)
             ->hasCommand(GenerateDataCommand::class)
             ->hasCommand(GenerateControllerCommand::class)
+            ->hasCommand(GenerateRequestCommand::class)
             ->hasCommand(GenerateCommand::class);
     }
 }

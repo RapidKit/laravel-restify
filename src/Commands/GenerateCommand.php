@@ -20,13 +20,20 @@ class GenerateCommand extends Command
         $path = app_path();
 
         $filePath = $path.'/Data/'.$name.'Data.php';
-        $this->info('Generating data object class: '.$filePath);
+        $this->info('Generated data object class: '.$filePath);
         Artisan::call('restify:gen-data '.$name.'Data');
 
         $filePath = $path.'/Http/Controllers/Api/'.$name.'Controller.php';
-
-        $this->info('Generating controller class: '.$filePath);
+        $this->info('Generated controller class: '.$filePath);
         Artisan::call('restify:gen-controller '.$name.'Controller');
+
+        $filePath = $path.'/Http/Requests/'.$name.'StoreRequest.php';
+        $this->info('Generated store request class: '.$filePath);
+        Artisan::call('restify:gen-request '.$name.'StoreRequest');
+
+        $filePath = $path.'/Http/Requests/'.$name.'UpdateRequest.php';
+        $this->info('Generated update request class: '.$filePath);
+        Artisan::call('restify:gen-request '.$name.'UpdateRequest');
 
         return self::SUCCESS;
     }
