@@ -9,9 +9,11 @@ use Illuminate\Support\Str;
 abstract class BaseService
 {
     protected string $entityName;
+
     protected string $singularTableName;
 
     protected array $successMessages;
+
     protected array $failureMessages;
 
     public function __construct(
@@ -60,8 +62,6 @@ abstract class BaseService
     /**
      * Store a newly created resource in storage.
      *
-     * @param BaseData $dto
-     * @return array
      * @throws NotFoundExceptionInterface
      * @throws ContainerExceptionInterface
      */
@@ -81,9 +81,6 @@ abstract class BaseService
     /**
      * Update the specified resource in storage.
      *
-     * @param BaseData $dto
-     * @param BaseModel $author
-     * @return array
      * @throws NotFoundExceptionInterface
      * @throws ContainerExceptionInterface
      */
@@ -103,8 +100,6 @@ abstract class BaseService
     /**
      * Remove the specified resource from storage.
      *
-     * @param BaseModel $author
-     * @return array
      * @throws BindingResolutionException
      */
     public function deleting(BaseModel $author): array

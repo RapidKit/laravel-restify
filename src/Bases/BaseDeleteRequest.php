@@ -29,8 +29,6 @@ abstract class BaseDeleteRequest extends FormRequest
 
     /**
      * Generate a redirect response.
-     *
-     * @return RedirectResponse
      */
     abstract public function getRedirector(): RedirectResponse;
 }
