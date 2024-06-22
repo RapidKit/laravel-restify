@@ -2,6 +2,4 @@
 
 namespace RapidKit\LaravelRestify;
 
-class LaravelRestify
-{
-}
+class LaravelRestify {}
