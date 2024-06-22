@@ -13,16 +13,18 @@ use Spatie\QueryBuilder\QueryBuilder;
 class BaseController extends Controller
 {
     protected $perPage = 15;
+
     protected $filterable = [];
+
     protected $sortable = [];
+
     protected $defaultSort = '-id';
 
     public function __construct(
         protected BaseModel $model,
         protected BaseService $service,
         protected string $indexRouteName = 'index',
-    ) {
-    }
+    ) {}
 
     public function index(): ResponseFactory|Response
     {
