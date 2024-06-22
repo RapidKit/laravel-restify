@@ -25,8 +25,6 @@ abstract class BaseRequest extends FormRequest
 
     /**
      * Convert the request to a DTO.
-     *
-     * @return BaseData
      */
     abstract public function toDto(): BaseData;
 }
