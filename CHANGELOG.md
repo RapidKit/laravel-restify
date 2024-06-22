@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-restify` will be documented in this file.
 
+## v1.5.0 - 2024-06-22
+
+**Full Changelog**: https://github.com/RapidKit/laravel-restify/compare/v1.4.0...v1.5.0
+
 ## v1.4.0 - 2024-06-22
 
 ### What's Changed
